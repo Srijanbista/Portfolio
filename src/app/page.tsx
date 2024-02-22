@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <main className="overflow-y-auto py-10 relative">
-      <h1 className="animate-bounce absolute text-center w-full text-blue-600 mb-4 font-extralight text-sm lg:text-xl text-nowrap dark:text-white">
+    <main className="relative overflow-y-auto py-10">
+      <h1 className="absolute mb-4 w-full animate-bounce text-nowrap text-center text-sm font-extralight text-blue-600 lg:text-xl dark:text-white">
         Portfolio Under Construction...
       </h1>
       <section
         id="/"
-        className="flex justify-center items-center h-[calc(100vh-157px)] bg-[url('/hero.jpg')] bg-no-repeat rounded-md w-5/6 bg-cover bg-center ml-auto mr-auto"
+        className="ml-auto mr-auto flex h-[calc(100vh-175px)] w-5/6 items-center justify-center rounded-md bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat"
       ></section>
     </main>
   );
