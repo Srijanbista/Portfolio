@@ -6,7 +6,7 @@ export default function Home() {
     <main className="overflow-y-auto px-10 scrollbar-thin lg:px-20">
       <section
         id="/"
-        className="flex h-screen flex-col items-center gap-y-10 pt-5 lg:flex-row-reverse lg:justify-center lg:pt-10"
+        className="flex h-screen flex-col items-center gap-y-10 pt-10 lg:flex-row-reverse lg:justify-center"
       >
         <Image
           src="/profile.jpg"
