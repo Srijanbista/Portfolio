@@ -5,7 +5,7 @@ const SocialMediaHandle = () => {
     <div className="flex items-baseline justify-center gap-x-5 lg:justify-start">
       <button
         type="button"
-        className="cursor-pointer"
+        className="cursor-pointer transition-transform delay-75 duration-500 ease-in-out hover:scale-125"
         onClick={() => window.open("https://github.com/Srijanbista", "_blank")}
       >
         <span className="cursor-pointer">
@@ -23,7 +23,7 @@ const SocialMediaHandle = () => {
       </button>
       <button
         type="button"
-        className="cursor-pointer"
+        className="cursor-pointer outline-blue-500 transition-transform delay-75 duration-500 ease-in-out hover:scale-125"
         onClick={() =>
           window.open("https://www.linkedin.com/in/srijan-bista/", "_blank")
         }
