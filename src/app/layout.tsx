@@ -1,11 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Srijan Bista",
@@ -19,8 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
+      <body className="scrollbar-track-violet-200 scrollbar-thin scrollbar-thumb-violet-700 scrollbar-thumb-rounded-lg ">
         {children}
         <Analytics />
         <SpeedInsights />
