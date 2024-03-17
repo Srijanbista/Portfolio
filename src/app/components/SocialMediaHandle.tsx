@@ -2,7 +2,7 @@
 
 const SocialMediaHandle = () => {
   return (
-    <div className="flex items-baseline gap-x-5">
+    <div className="flex items-baseline justify-center gap-x-5 lg:justify-start">
       <button
         type="button"
         className="cursor-pointer"
