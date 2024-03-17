@@ -1,8 +1,9 @@
 import Image from "next/image";
+import SocialMediaHandle from "./components/SocialMediaHandle";
 
 export default function Home() {
   return (
-    <main className="scrollbar-thin  overflow-y-auto px-20">
+    <main className="overflow-y-auto  px-20 scrollbar-thin">
       <section
         id="/"
         className="flex h-screen flex-col items-center gap-y-10 pt-10 lg:flex-row-reverse lg:justify-center"
@@ -26,6 +27,7 @@ export default function Home() {
             Express, and NextJS, crafting robust web apps and APIs. Let's build
             impactful digital experiences together.`}
           </p>
+          <SocialMediaHandle />
         </div>
       </section>
     </main>
