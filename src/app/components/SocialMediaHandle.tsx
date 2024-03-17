@@ -52,7 +52,7 @@ const SocialMediaHandle = () => {
         type="button"
         className="cursor-pointer outline-blue-500 transition-transform delay-75 duration-500 ease-in-out hover:scale-125"
         onClick={() =>
-          (window.location.href = `mailto:Srijanbista4284@gmail.com?subject=Subject&body=Body`)
+          (window.location.href = `mailto:Srijanbista4284@gmail.com`)
         }
       >
         <span className="cursor-pointer">
