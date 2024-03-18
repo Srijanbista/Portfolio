@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="scrollbar-track-violet-200 scrollbar-thin scrollbar-thumb-violet-700 scrollbar-thumb-rounded-lg ">
+      <body className="scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-400 scrollbar-thumb-rounded-lg ">
         {children}
         <Analytics />
         <SpeedInsights />
