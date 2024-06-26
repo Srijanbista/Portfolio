@@ -2,6 +2,7 @@
 import { LampContainer } from "@/components/ui/Lamp";
 import { motion } from "framer-motion";
 import HeroSection from "./components/HeroSection";
+import Skills from "./components/Skills";
 export default function Home() {
   return (
     <main className="overflow-y-auto scrollbar-thin">
@@ -24,7 +25,9 @@ export default function Home() {
           </motion.h1>
         </LampContainer>
       </section>
-
+      <section>
+        <Skills />
+      </section>
       {/* <section>
         <GlobeDemo />
       </section> */}
