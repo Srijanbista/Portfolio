@@ -1,38 +1,36 @@
-import Image from "next/image";
-import SocialMediaHandle from "./components/SocialMediaHandle";
-
+"use client";
+import { LampContainer } from "@/components/ui/Lamp";
+import { motion } from "framer-motion";
+import HeroSection from "./components/HeroSection";
+import Skills from "./components/Skills";
 export default function Home() {
   return (
-    <main className="overflow-y-auto px-10 scrollbar-thin lg:px-20">
-      <section
-        id="/"
-        className="flex h-screen flex-col items-center gap-y-10 pt-10 lg:flex-row-reverse lg:justify-center"
-      >
-        <Image
-          src="/profile.jpg"
-          width={800}
-          height={800}
-          alt="profile pic"
-          className="h-60 w-60 rounded-full lg:h-96 lg:w-96"
-        />
-        <div className="flex max-w-max cursor-default flex-col items-center justify-center gap-y-3 lg:items-start lg:gap-y-6">
-          <h1 className="text-center text-3xl text-slate-900 lg:text-left lg:text-6xl">
-            Hi, I am Srijan
-          </h1>
-          <h2 className="text-center text-3xl text-slate-900 lg:text-left lg:text-6xl">
-            Software Developer
-          </h2>
-          <p className="w-11/12 text-wrap text-justify text-sm text-slate-800">
-            {`With 2 years of experience, I specialize in ReactJS, MongoDB,
-            Express, and NextJS, crafting robust web apps and APIs.`}
-          </p>
-          <p className="animate-pulse text-wrap text-center text-lg text-blue-700">
-            {` Let's build
-            impactful digital experiences together. 🚀`}
-          </p>
-          <SocialMediaHandle />
-        </div>
+    <main className="overflow-y-auto scrollbar-thin">
+      <section>
+        <HeroSection />
       </section>
+      <section>
+        <LampContainer>
+          <motion.h1
+            initial={{ opacity: 0.5, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          >
+            Build Digital Experiences <br /> the right way
+          </motion.h1>
+        </LampContainer>
+      </section>
+      <section>
+        <Skills />
+      </section>
+      {/* <section>
+        <GlobeDemo />
+      </section> */}
     </main>
   );
 }
