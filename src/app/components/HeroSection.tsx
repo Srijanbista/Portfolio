@@ -28,7 +28,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="bg-grid-white/[0.02] relative flex h-screen w-screen overflow-hidden bg-black/[0.96] antialiased md:items-center md:justify-center">
+    <div className="bg-grid-white/[0.02] relative flex h-screen w-screen items-center justify-center overflow-hidden bg-slate-950 antialiased">
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
@@ -37,10 +37,6 @@ const HeroSection = () => {
         <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
           Srijan Bista
         </h1>
-        {/* <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
-            With 2 years of experience, I specialize in ReactJS, MongoDB,
-            Express, and NextJS, crafting robust web apps and APIs.
-          </p> */}
         <TypewriterEffectSmooth words={words} />
       </div>
     </div>
