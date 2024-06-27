@@ -28,7 +28,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="bg-grid-white/[0.02] relative flex h-screen w-screen items-center justify-center overflow-hidden bg-slate-950 antialiased">
+    <div className="bg-grid-white/[0.02] relative flex h-screen w-full items-center justify-center overflow-hidden bg-slate-950 antialiased">
       <Spotlight
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
