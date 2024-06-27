@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <div className="relative flex h-[40rem] w-screen flex-col items-center bg-slate-950 py-10 antialiased">
+    <div className="relative flex h-[40rem] w-full flex-col items-center bg-slate-950 py-10 antialiased">
       <div className="mx-auto max-w-2xl p-4">
         <h1 className="relative z-10 bg-gradient-to-b from-neutral-200  to-neutral-600 bg-clip-text text-center font-sans text-4xl  font-bold text-transparent md:text-7xl">
           Skills
